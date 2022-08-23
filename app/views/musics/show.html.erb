@@ -1,0 +1,16 @@
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4"><%= @music.name %></h1>
+    <p class="lead">Artist: <%= @music.artist %>  |  Album: <%= @music.album %>  |  Year of Release: <%= @music.yearofrelease %>
+      <br>
+      <br>
+      <%= link_to "Edit this music", edit_music_path(@music), class:"btn btn-light"%> |
+      <%= link_to "Back to musics", musics_path, class:"btn btn-dark" %>
+    </p>
+  </div>
+</div>
+
+<div>
+  <%= button_to "Delete this song", @music, method: :delete%>
+</div>

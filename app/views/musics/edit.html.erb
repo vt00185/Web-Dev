@@ -1,0 +1,10 @@
+<h1>Editing music</h1>
+<br>
+<%= render "form", music: @music %>
+
+<br>
+
+<div>
+  <%= link_to "Show this music", @music, class:"btn btn-dark" %> |
+  <%= link_to "Back to musics", musics_path, class:"btn btn-dark" %>
+</div>
